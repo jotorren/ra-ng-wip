@@ -1,0 +1,10 @@
+{
+  "name": "ra-ng-common-server",
+  "version": "1.0.0",
+  "main": "public-routes.js",
+  "author": "Jordi Torrente",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.8.5"
+  }
+}

@@ -1,0 +1,7 @@
+[
+{"id": 1, "name":"Bob Smith", 		"username": "bob",			"password": "secret", 	"raNg": "{ \"roles\": [\"user\", \"admin\", \"publisher\", \"writer\"] }"	},
+{"id": 2, "name":"Jordi Torrente", 	"username": "jordi",		"password": "secret", 	"raNg": "{ \"roles\": [\"publisher\", \"writer\"] }" 						},
+{"id": 3, "name":"Publisher Doe", 	"username": "publisher",	"password": "secret", 	"raNg": "{ \"roles\": [\"user\",\"publisher\"] }" 							},
+{"id": 4, "name":"Writer Doe", 		"username": "writer", 		"password": "secret", 	"raNg": "{ \"roles\": [\"user\",\"writer\"] }" 								},
+{"id": 5, "name":"Admin Doe", 		"username": "admin", 		"password": "secret", 	"raNg": "{ \"roles\": [\"admin\"] }" 										}
+]

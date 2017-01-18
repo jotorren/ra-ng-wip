@@ -1,0 +1,10 @@
+{
+  "name": "ra-ng-cors-proxy",
+  "version": "1.0.0",
+  "main": "cors.js",
+  "author": "Jordi Torrente",
+  "license": "MIT",
+  "dependencies": {
+    "cors-anywhere": "^0.4.0"
+  }
+}

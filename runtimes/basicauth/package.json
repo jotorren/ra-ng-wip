@@ -1,0 +1,14 @@
+{
+  "name": "ra-ng-basicauth-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Jordi Torrente",
+  "license": "MIT",
+  "dependencies": {
+    "basic-auth": "^1.0.4",
+    "body-parser": "^1.6.5",
+    "cors": "^2.4.1",
+    "dotenv": "^0.4.0",
+    "express": "^4.8.5"
+  }
+}
