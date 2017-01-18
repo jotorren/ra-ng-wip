@@ -1,0 +1,34 @@
+build
+dist
+tmp
+runtimes
+
+# Ignore Node & Bower & JSPM
+###################
+node_modules
+rang_modules
+bower_components
+jspm_packages
+
+# Ignore Test reporters
+###################
+test
+coverage
+report
+doc
+
+# Ignore typings
+###################
+.typingsrc
+typings
+
+# Ignore transpiled code
+###################
+src/app/**/*.js
+src/app/**/*.map
+e2e/**/*.js
+e2e/**/*.map
+
+# Ignore vscode symbols
+###################
+.vscode/symbols.json

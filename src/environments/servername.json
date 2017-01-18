@@ -1,0 +1,29 @@
+{
+    "import": ["app/shared/config/log_pro.json"],
+
+    "security": {
+        "token": {
+            "endpoint": "https://localhost:8002/oauth/token",
+            "oauth2": {
+                "clientId": "abc123",
+                "clientCredentials": "U2FsdGVkX188GpAZwZJ6gwlFxxY1lYbgIbMDhSviNnnwZoIv/JR4LKRnjvh59j5t",
+                "grantType": "password",
+                "checktoken": {
+                    "mode": "remote",
+                    "endpoint": "https://localhost:8002/api/tokeninfo",
+                    "refresh": "on"
+                }
+            }
+        },
+        "profile": {
+            "endpoint": "https://localhost:8002/api/users",
+            "oauth2": {
+                "fieldProfile": "authorities"
+            }
+        }
+    },
+
+    "api": {
+        "test": "https://localhost:8002/api/protected/random-quote"
+    }
+}

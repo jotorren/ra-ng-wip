@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Log endpoint</title>
+    </head>
+    <body>
+        <script>
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) 
+            {
+                var sParameterName = sURLVariables[i].split('=');
+                console.log(sParameterName[0]);
+                console.log(sParameterName[1]);
+            }
+        </script>
+    </body>
+</html>

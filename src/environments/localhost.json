@@ -1,0 +1,17 @@
+{
+    "import": ["app/shared/config/log.json"],
+
+    "security": {
+        "token": {
+            "endpoint": "http://localhost:8001/jwt/token",
+            "jwt": {
+                "claimProfile": "raNg",
+                "noJwtError": false
+            }
+        }
+    },
+
+    "api": {
+        "test": "http://localhost:8001/api/protected/random-quote"
+    }
+}

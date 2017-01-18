@@ -1,0 +1,18 @@
+<aside id="aside">
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            {{ 'ui.aside.panel.title' | translate }}
+        </div>
+        <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt tellus in magna congue, 
+                non bibendum neque semper. Vestibulum sed sapien ac quam viverra consectetur vel sed libero.</p>            
+            <p-toggleButton onIcon="fa-check-square" offIcon="fa-square"
+                onLabel="{{ 'ui.aside.on.label' | translate }}" 
+                offLabel="{{ 'ui.aside.off.label' | translate }}"
+                [(ngModel)]="checked" (click)="send()"></p-toggleButton>
+                <!-- (onChange)="send()" -->
+            <p></p>
+            <rang-lang-selector></rang-lang-selector>                             
+        </div>
+    </div>
+</aside>

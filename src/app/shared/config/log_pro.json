@@ -1,0 +1,35 @@
+{
+    "serviceName": "log",
+    "config": [
+        {
+            "name": "root",
+            "level": "INFO",
+            "layout": {
+                "type": "JsonLayout",
+                "params": {
+                    "readable": false,
+                    "combineMessages": false
+                }
+            },
+            "additivity": false,
+            "appenders": [
+                "BrowserConsoleAppender"
+            ]
+        },
+        {
+            "name": "app",
+            "level": "INFO",
+            "layout": {
+                "type": "JsonLayout"
+            },
+            "additivity": false,
+            "appenders": ["AjaxAppenderBatch"],
+            "ajax":{
+                "endpoint": "http://localhost:8003/api/log",
+                "withCredentials": false,
+                "batchSize": "3",
+                "timerInterval": 10000
+            }
+        }
+    ]
+}

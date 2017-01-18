@@ -1,0 +1,15 @@
+<nav id="topnav">
+    <div class="navbar">
+        <ul class="nav nav-pills">
+            <li [ngClass]="{active: router.url.startsWith('/home')}"> 
+            <a [routerLink]="['/home']">{{ 'ui.topnav.link.home' | translate }}</a></li>
+
+            <li [ngClass]="{active: router.url.startsWith('/other1')}"> 
+            <a [routerLink]="['/other1']">{{ 'ui.topnav.link.other1' | translate }}</a></li>
+
+            <li [ngClass]="{active: router.url.startsWith('/other2')}">
+            <a [routerLink]="['/other2']">{{ 'ui.topnav.link.other2' | translate }}</a></li>
+        </ul>
+        <rang-logout *ngIf="auth.isSecurityActive() && auth.isAuthenticated()"></rang-logout>
+    </div>
+</nav>

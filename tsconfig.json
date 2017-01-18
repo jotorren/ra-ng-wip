@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitHelpers": false,
+    "allowUnreachableCode": false,
+    "baseUrl": "src",
+    "paths": {
+        "app": ["app"],
+        "ra-ng":           ["../rang_modules/src"],
+        "ra-ng/cache":     ["../rang_modules/src/cache"],
+        "ra-ng/config":    ["../rang_modules/src/config"],
+        "ra-ng/env":       ["../rang_modules/src/env"],
+        "ra-ng/error":     ["../rang_modules/src/error"],
+        "ra-ng/event":     ["../rang_modules/src/event"],
+        "ra-ng/http":      ["../rang_modules/src/http"],
+        "ra-ng/i18n":      ["../rang_modules/src/i18n"],
+        "ra-ng/log":       ["../rang_modules/src/log"],
+        "ra-ng/models":    ["../rang_modules/src/models"],
+        "ra-ng/navigation":["../rang_modules/src/navigation"],
+        "ra-ng/security":  ["../rang_modules/src/security"],
+        "ra-ng/validation":["../rang_modules/src/validation"]
+    },
+    "lib": ["dom","es6"],
+    "typeRoots": ["node_modules/@types/","typings/modules"]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "e2e",
+    "src/environments",
+    "**/*-aot.ts"
+  ],
+  "compileOnSave": true,
+  "buildOnSave": false
+}

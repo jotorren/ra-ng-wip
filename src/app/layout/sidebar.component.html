@@ -1,0 +1,20 @@
+<section id="sidebar">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="list-group">
+                <a href="#Pictures" class="list-group-item" [ngClass]="{active: router.url.endsWith('#Pictures')}">
+                    <span class="glyphicon glyphicon-camera"></span> {{ 'ui.sidebar.menu.pictures' | translate }} <span class="badge">25</span>
+                </a>
+                <a href="#Documents" class="list-group-item" [ngClass]="{active: router.url.endsWith('#Documents')}">
+                    <span class="glyphicon glyphicon-file"></span> {{ 'ui.sidebar.menu.documents' | translate }} <span class="badge">145</span>
+                </a>
+                <a href="#Music" class="list-group-item" [ngClass]="{active: router.url.endsWith('#Music')}">
+                    <span class="glyphicon glyphicon-music"></span> {{ 'ui.sidebar.menu.music' | translate }} <span class="badge">50</span>
+                </a>
+                <a href="#Videos" class="list-group-item" [ngClass]="{active: router.url.endsWith('#Videos')}">
+                    <span class="glyphicon glyphicon-film"></span> {{ 'ui.sidebar.menu.videos' | translate }} <span class="badge">8</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

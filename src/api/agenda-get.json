@@ -1,0 +1,19 @@
+{
+    "data": {
+        "id": "123",
+        "versio": "1",
+        "organitzador": "Cooperativa de Gratallops",
+        "grupsInteres": "Cooperativa Agrícola de Gratallops",
+        "assistentsGeneralitat": "Asssessor del Departament d’Agricultura",
+        "altresAssistents": "Josep Roig",
+        "activitat": "Sopar col•loqui sobre la situació del vial Priorat",
+        "tema": "Situació del vial Priorat",
+        "dataReunio": "2016-04-12T23:20:50.52Z",
+        "estat": "Validat"
+    },
+    "metadata": {
+        "scopes": [
+            "age@modificar", "age@publicar"
+        ]
+    }
+}
