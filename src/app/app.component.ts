@@ -39,11 +39,11 @@ export class AppComponent implements OnDestroy, OnInit {
     }
 
     this.log.debug(this.translate.instant('log.app.init.cache', {
-      class: this.className, name: this.cacheService.get('application').$$id
+      class: this.className, name: this.cacheService.get('application').id
     }));
 
     this.translate.get('log.app.init.cache', {
-      class: this.className, name: this.cacheService.get('memory').$$id
+      class: this.className, name: this.cacheService.get('memory').id
     }).subscribe((msg) => { this.log.debug(msg); });
 
     this.busSubs = this.busService.listenByFilter(message => {
