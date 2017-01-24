@@ -30,7 +30,7 @@
         "ra-ng/security":  ["../rang_modules/src/security"],
         "ra-ng/validation":["../rang_modules/src/validation"]
     },
-    "lib": ["dom","es6"],
+    "lib": ["dom","es2015"],
     "typeRoots": ["node_modules/@types/","typings/modules"]
   },
   "include": [
