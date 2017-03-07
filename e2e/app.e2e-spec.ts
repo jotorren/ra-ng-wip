@@ -2,7 +2,7 @@ import {browser, element, by} from 'protractor';
 
 describe('ra-ng quickstart E2E Tests', function () {
 
-    let expectedMsg = 'ra-ng quickstart 2.0.0';
+    let expectedMsg = 'Work in progress ra-ng 2.x';
 
     beforeEach(function () {
         browser.get('');
