@@ -20,12 +20,11 @@
     '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
     // ra-ng
-    'ra-ng': 'npm:ra-ng/bundles/ra-ng.umd.js',
+    'ra-ng': 'rang_modules/src',
 
     // other libraries
     'ng2-translate/ng2-translate': 'npm:ng2-translate/bundles/ng2-translate.umd.js',
     'log4javascript': 'npm:log4javascript/log4javascript.js',
-    'cachefactory': 'npm:cachefactory/dist/cachefactory.js',
     'lodash': 'npm:lodash/lodash.js',
 
     'rxjs': 'npm:rxjs',
@@ -38,7 +37,8 @@
     'app': { main: 'main.js', defaultExtension: 'js' },
     'rxjs': { defaultExtension: 'js' },
     'crypto-js': { main: 'index.js', defaultExtension: 'js', format: 'cjs' },
-    'primeng': { defaultExtension: 'js' }
+    'primeng': { defaultExtension: 'js' },
+    'ra-ng': { main: 'index.js', defaultExtension: 'js' }
   };
 
   var appPackageNames = [

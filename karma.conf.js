@@ -54,12 +54,11 @@ module.exports = function (config) {
       { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false },
 
       // ra-ng
-      { pattern: 'node_modules/ra-ng/**/*.js', included: false, watched: false },
+      { pattern: 'rang_modules/src/**/*.js', included: false, watched: false },
 
       // other libraries
       { pattern: 'node_modules/primeng/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/log4javascript/**/*.js', included: false, watched: false },
-      { pattern: 'node_modules/cachefactory/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/ng2-translate/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/crypto-js/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/lodash/**/*.js', included: false, watched: false },
