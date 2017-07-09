@@ -86,10 +86,10 @@ export let Config = {
                 key: 'user_profile'
             },
 
-            // json: {
-            //     fieldUsername: 'username',
-            //     fieldProfile: 'raNg'
-            // },
+            json: {
+                fieldUsername: 'username',
+                fieldProfile: 'raNg'
+            },
 
             oauth2: {
                 fieldProfile: 'authorities'
