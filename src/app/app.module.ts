@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
         provide: TranslateLoader,
         useFactory: (cfgService: ConfigurationService) => new LanguageConfigurationService(cfgService, 'i18n_'),
         deps: [ConfigurationService, Http]
-    }), RaNGModule.forRoot('security-oauth2'), LayoutModule, AppRoutingModule, CoreModule, AppSharedModule, HomeModule],
+    }), RaNGModule.forRoot('security-jwt'), LayoutModule, AppRoutingModule, CoreModule, AppSharedModule, HomeModule],
     declarations: [
         AppComponent
     ],

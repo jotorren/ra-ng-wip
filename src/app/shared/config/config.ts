@@ -31,6 +31,7 @@ export let Config = {
         mode: 'on', // on, off
 
         unauthenticatedView: 'login',
+        logoutView: 'login',
         authenticatedDefaultView: 'home',
         unauthorizedView: 'forbidden',
         globalMessages: false, // true, false
@@ -38,6 +39,7 @@ export let Config = {
         token: {
             // endpoint: 'http://localhost:8001/jwt/token',
             endpoint: 'https://localhost:8002/oauth/token',
+            // endpoint: '/oauth/token',
             // endpoint: 'http://localhost:8003/login',
 
             storage: {
@@ -72,6 +74,7 @@ export let Config = {
                 checktoken: {
                     mode: 'remote', // local, remote, off
                     endpoint: 'https://localhost:8002/api/tokeninfo',
+                    // endpoint: '/api/tokeninfo',
                     refresh: 'on' // on, off
                 }
             }
@@ -79,6 +82,7 @@ export let Config = {
 
         profile: {
             endpoint: 'https://localhost:8002/api/users',
+            // endpoint: '/api/users',
             // endpoint: 'http://localhost:8003/api/users',
 
             storage: {

@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { ConfigurationLoaderService, LoggerFactory, Logger } from 'ra-ng';
+import { ConfigurationLoaderService, LoggerFactory, Logger, fromUri2Url } from 'ra-ng';
 
 import { Config } from './shared';
 import { AppModule } from './app.module';
@@ -27,6 +27,12 @@ console.log(JSON.stringify({
   message: 'Using configuration selector: [' + selector + ']'
 }));
 
+let cfgUrl = fromUri2Url('/environments/' + selector.trim() + '.json');
+console.log(JSON.stringify({
+  logger: 'console',
+  message: 'Using configuration URL: [' + cfgUrl + ']'
+}));
+
 console.log(JSON.stringify({
   logger: 'console',
   message: 'Starting environment: [' + process.env.ENV + ']'
@@ -35,7 +41,7 @@ if (process.env.ENV === 'production') {
   enableProdMode();
 }
 
-ConfigurationLoaderService.bootstrap(selector, Config).subscribe(
+ConfigurationLoaderService.bootstrap(cfgUrl, Config).subscribe(
   (loaded) => {
     LoggerFactory.configure(Config);
     const LOG: Logger = LoggerFactory.getLogger('root');
